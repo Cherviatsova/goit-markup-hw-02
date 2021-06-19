@@ -3,11 +3,12 @@
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
   --main-color: #212121;
+  --link-color: #2196f3;
 }
 body {
   font-family: var(--main-font);
   font-weight: 500;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .list {
@@ -26,11 +27,12 @@ body {
   color: #000000;
 }
 .logo {
-  color: #2196f3;
+  color: var(--link-color);
 }
 .logo-type {
   /* color: #ffffff; */
 }
+
 /* menu navigation */
 .menu-link {
   font-size: 14px;
@@ -40,7 +42,7 @@ body {
 }
 .menu-link:hover,
 .menu-link:focus {
-  color: #2196f3;
+  color: var(--link-color);
 }
 .mail-link,
 .tel-link {
@@ -52,7 +54,11 @@ body {
 
 .mail-link:hover,
 .mail-link:focus {
-  color: #2196f3;
+  color: var(--link-color);
+}
+.tel-link:hover,
+.tel-link:focus {
+  color: var(--link-color);
 }
 
 /* main section */
@@ -69,7 +75,7 @@ body {
   display: block;
   margin: 0 auto;
   cursor: pointer;
-  background: #2196f3;
+  background: var(--link-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -83,6 +89,9 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
 }
+.modal-button:hover,
+.modal-button:focus
+
 /* about company's concept section */
 
 .concept-list-title {
@@ -125,29 +134,49 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
+/* Hero portfolio */
+.portfolio-button-list {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  cursor: pointer;
+}
+.portfolio-button-list-type {
+  color: #ffffff;
+  background: var(--link-color);
+}
+.navigation .menu-link.current {
+  color: var(--link-color);
+}
+
 /* footer */
 .contacts-adress {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   /* color: #ffffff; */
 }
-/* .contacts-mail,
+.contacts-mail,
 .contacts-tel {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-} */
+  /* color: rgba(255, 255, 255, 0.6); */
+}
 
 .contacts-mail:focus,
 .contacts-mail:hover {
-  color: #2196f3;
+  color: var(--link-color);
 }
 
 .contacts-tel:focus,
 .contacts-tel:hover {
-  color: #2196f3;
+  color: var(--link-color);
 }
