@@ -1,7 +1,6 @@
 :root {
   --tagline-color: #ffffff;
   --main-font: 'Roboto', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
   --main-color: #212121;
   --link-color: #2196f3;
 }
@@ -19,7 +18,8 @@ body {
 }
 /* Webstudio */
 .logo-link {
-  font-family: var(--secondary-font);
+  font-family: Raleway;
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -35,8 +35,11 @@ body {
 
 /* menu navigation */
 .menu-link {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color);
 }
@@ -95,12 +98,15 @@ body {
 /* about company's concept section */
 
 .concept-list-title {
+  font-family: var(--main-font);
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--main-color);
+}
+.subtitle-text {
+  text-transform: uppercase;
 }
 .concept-list-title-text {
   font-size: 14px;
@@ -121,6 +127,8 @@ body {
 
 /* about teamates */
 .team-list-title {
+  font-family: var(--main-font);
+  font-style: normal;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -136,7 +144,7 @@ body {
 }
 /* Hero portfolio */
 .portfolio-button-list {
-  font-family: inherit;
+  font-family: Roboto;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
@@ -144,6 +152,11 @@ body {
   color: #212121;
   cursor: pointer;
 }
+.portfolio-button-list:hover,
+.portfolio-button-list:focus {
+  background: var(--link-color);
+}
+
 .portfolio-button-list-type {
   color: #ffffff;
   background: var(--link-color);
@@ -151,7 +164,24 @@ body {
 .navigation .menu-link.current {
   color: var(--link-color);
 }
-
+.list-projects {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+}
+.list-projects-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
 /* footer */
 .contacts-adress {
   font-style: normal;
