@@ -187,7 +187,17 @@ body {
   color: var(--text-color);
 }
 /* Hero portfolio */
-.portfolio-button-list {
+.portfolio-button-item {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+.portfolio-button {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
@@ -198,15 +208,25 @@ body {
   color: var(--main-color);
   cursor: pointer;
 }
-.portfolio-button-list:hover,
-.portfolio-button-list:focus {
+
+.portfolio-button:hover,
+.portfolio-button:focus {
   background: var(--link-color);
 }
 
-.portfolio-button-list-type {
+.portfolio-button-type {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: #ffffff;
   background: var(--link-color);
+  cursor: pointer;
 }
+
 .navigation .menu-link.current {
   color: var(--link-color);
 }
